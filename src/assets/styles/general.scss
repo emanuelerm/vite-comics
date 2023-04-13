@@ -10,6 +10,12 @@ body {
   font-family: "Bangers", cursive;
 }
 
+header {
+  .custom-container {
+    height: 10rem;
+  }
+}
+
 // CUSTOM CONTAINER
 @mixin make-container($padding-x: $container-padding-x) {
   width: 70%;
