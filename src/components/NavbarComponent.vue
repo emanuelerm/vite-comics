@@ -94,6 +94,7 @@ a {
     height: 5px;
     background-color: #0c7cec;
     transform: scaleY(0);
+    transform-origin: bottom;
     transition: all 300ms ease-in;
   }
 
