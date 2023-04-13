@@ -9,3 +9,16 @@ $fa-font-path: "./webfonts";
 body {
   font-family: "Bangers", cursive;
 }
+
+// CUSTOM CONTAINER
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 70%;
+  padding: 1.5rem 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Usage
+.custom-container {
+  @include make-container();
+}
