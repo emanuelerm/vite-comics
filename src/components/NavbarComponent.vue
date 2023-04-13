@@ -1,5 +1,5 @@
 <template>
-  <ul class="d-flex justify-content-between list-unstyled">
+  <ul class="d-flex justify-content-between list-unstyled mb-0">
     <li v-for="navItem in navbarEls" class="text-uppercase">
       <a :href="`${navItem.hrefLink}`">{{ navItem.textLink }}</a>
     </li>
@@ -73,5 +73,10 @@ export default {
 a {
   font-size: 1.1rem;
   text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #0c7cec;
 }
 </style>

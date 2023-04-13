@@ -28,3 +28,6 @@ header {
 .custom-container {
   @include make-container();
 }
+
+// VARIABLES
+$dc-light-blue: #0c7cec;
