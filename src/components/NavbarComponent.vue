@@ -78,12 +78,14 @@ export default {
 a {
   font-size: 1.2rem;
   color: black;
+  text-decoration: none;
 
   &:hover {
     color: #0c7cec;
   }
 
-  &:hover::after {
+  &::after {
+    opacity: 0;
     content: "";
     position: absolute;
     bottom: -54px;
@@ -91,6 +93,13 @@ a {
     width: 100%;
     height: 5px;
     background-color: #0c7cec;
+    transform: scaleY(0);
+    transition: all 300ms ease-in;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform: scaleY(1);
   }
 }
 
@@ -105,6 +114,8 @@ a {
     width: 100%;
     height: 5px;
     background-color: #0c7cec;
+    opacity: 1 !important;
+    transform: scaleY(1);
   }
 }
 </style>
