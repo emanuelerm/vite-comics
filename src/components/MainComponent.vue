@@ -38,13 +38,13 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  height: 40rem;
+  height: 42rem;
   #content {
     height: 7rem;
     background-color: #1c1c1c;
   }
   #benefits {
-    height: 9rem;
+    height: 11rem;
     background-color: #0c7cec;
   }
   #navigation {
