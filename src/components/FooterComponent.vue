@@ -10,7 +10,7 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  height: calc(100vh - 50rem);
+  height: calc(100vh - 51rem);
   background-color: #303030;
 }
 </style>

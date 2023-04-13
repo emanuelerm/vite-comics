@@ -38,9 +38,9 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  height: 42rem;
+  height: 43rem;
   #content {
-    height: 7rem;
+    height: 8rem;
     background-color: #1c1c1c;
   }
   #benefits {
