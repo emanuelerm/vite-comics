@@ -15,18 +15,20 @@
     </section>
 
     <section id="navigation">
-      <div class="custom-container"></div>
+      <NavigationComponent />
     </section>
   </main>
 </template>
 
 <script>
 import BenefitsComponent from "./BenefitsComponent.vue";
+import NavigationComponent from "./NavigationComponent.vue";
 
 export default {
   name: "MainComponent",
   components: {
     BenefitsComponent,
+    NavigationComponent,
   },
   data() {
     return {
@@ -39,6 +41,7 @@ export default {
 <style lang="scss" scoped>
 main {
   height: 43rem;
+  z-index: 999;
   #content {
     height: 8rem;
     background-color: #1c1c1c;
@@ -46,6 +49,8 @@ main {
   #benefits {
     height: 11rem;
     background-color: #0c7cec;
+    position: relative;
+    z-index: 999;
   }
   #navigation {
     height: 24rem;

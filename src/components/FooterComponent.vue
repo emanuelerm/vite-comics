@@ -1,5 +1,5 @@
 <template>
-  <footer></footer>
+  <footer class="position-relative"></footer>
 </template>
 
 <script>
@@ -10,7 +10,8 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  height: calc(100vh - 51rem);
+  height: 7.05rem;
   background-color: #303030;
+  z-index: 999;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="position-relative">
     <div class="custom-container px-3">
       <div class="row justify-content-between align-items-center h-100">
         <div class="col-2">
@@ -40,4 +40,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+header {
+  z-index: 999;
+}
+</style>

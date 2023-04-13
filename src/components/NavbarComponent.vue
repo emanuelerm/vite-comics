@@ -1,7 +1,12 @@
 <template>
   <ul class="d-flex justify-content-between list-unstyled mb-0">
     <li v-for="navItem in navbarEls" class="text-uppercase mx-2">
-      <a :href="`${navItem.hrefLink}`">{{ navItem.textLink }}</a>
+      <a
+        :href="`${navItem.hrefLink}`"
+        class="position-relative"
+        :class="navItem.active ? 'active' : ''"
+        >{{ navItem.textLink }}</a
+      >
     </li>
   </ul>
 </template>
@@ -21,7 +26,7 @@ export default {
         {
           textLink: "comics",
           hrefLink: "#",
-          active: false,
+          active: true,
         },
         {
           textLink: "movies",
@@ -76,6 +81,30 @@ a {
 
   &:hover {
     color: #0c7cec;
+  }
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #0c7cec;
+  }
+}
+
+.active {
+  color: #0c7cec;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #0c7cec;
   }
 }
 </style>

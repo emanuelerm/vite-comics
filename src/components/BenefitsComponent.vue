@@ -3,19 +3,16 @@
     <div class="row row-cols-5 align-items-center h-100">
       <div
         v-for="itemEl in benefitsCardEls"
-        class="col d-flex align-items-center"
+        class="col d-flex align-items-center px-5"
       >
-        <div class="w-50 text-center">
-          <img :src="getImagePath(`../assets/imgs/${itemEl.imgPath}`)" alt="" />
-        </div>
-        <div class="w-50">
-          <p
-            class="text-white"
-            :class="itemEl.cardText === 'dc power visa' ? 'ps-2' : ''"
-          >
-            {{ itemEl.cardText }}
-          </p>
-        </div>
+        <img
+          :src="getImagePath(`../assets/imgs/${itemEl.imgPath}`)"
+          alt=""
+          :class="itemEl.cardText === 'dc power visa' ? 'un-width' : ''"
+        />
+        <p class="text-white ps-3 m-0">
+          {{ itemEl.cardText }}
+        </p>
       </div>
     </div>
   </div>
@@ -67,4 +64,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+img {
+  height: 5rem;
+}
+
+.un-width {
+  width: 5rem;
+}
+</style>
