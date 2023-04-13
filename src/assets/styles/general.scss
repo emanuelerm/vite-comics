@@ -13,13 +13,13 @@ body {
 header {
   .custom-container {
     height: 10rem;
+    padding: 1.5rem 0;
   }
 }
 
 // CUSTOM CONTAINER
 @mixin make-container($padding-x: $container-padding-x) {
-  width: 70%;
-  padding: 1.5rem 0;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
 }

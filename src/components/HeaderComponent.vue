@@ -1,7 +1,7 @@
 <template>
   <header>
-    <div class="custom-container">
-      <div class="row justify-content-between align-items-center">
+    <div class="custom-container px-3">
+      <div class="row justify-content-between align-items-center h-100">
         <div class="col-2">
           <img
             :src="getImagePath(`../assets/imgs/${imgData.imgPath}`)"
@@ -40,4 +40,4 @@ export default {
 };
 </script>
 
-<style class="scss" scoped></style>
+<style lang="scss" scoped></style>

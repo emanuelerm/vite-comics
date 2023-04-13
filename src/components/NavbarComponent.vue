@@ -1,6 +1,6 @@
 <template>
   <ul class="d-flex justify-content-between list-unstyled mb-0">
-    <li v-for="navItem in navbarEls" class="text-uppercase">
+    <li v-for="navItem in navbarEls" class="text-uppercase mx-2">
       <a :href="`${navItem.hrefLink}`">{{ navItem.textLink }}</a>
     </li>
   </ul>
@@ -69,14 +69,13 @@ export default {
 };
 </script>
 
-<style class="scss" scoped>
+<style lang="scss" scoped>
 a {
-  font-size: 1.1rem;
-  text-decoration: none;
+  font-size: 1.2rem;
   color: black;
-}
 
-a:hover {
-  color: #0c7cec;
+  &:hover {
+    color: #0c7cec;
+  }
 }
 </style>
