@@ -8,6 +8,13 @@ $fa-font-path: "./webfonts";
 
 body {
   font-family: "Bangers", cursive;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 }
 
 header {

@@ -83,6 +83,9 @@ export default {
 a {
   color: #959595;
   text-decoration: none;
+  &:hover {
+    color: white;
+  }
 }
 .dc-bg-logo {
   z-index: 1;
